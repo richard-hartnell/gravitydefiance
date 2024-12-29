@@ -8,32 +8,48 @@
 	<head>
 		<title>Richard Hartnell || Circus Arts</title>
 
-		<!-- <meta property="og:site_name" content="DAWdust"/>
-		<meta property="og:title" content="DAWdust"/>
-		<meta property="og:url" content="https://www.dawdust.com"/>
+		<meta property="og:site_name" content="gravitydefiance.net"/>
+		<meta property="og:title" content="Richard Hartnell || Circus Arts"/>
+		<meta property="og:url" content="https://www.gravitydefiance.net"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content="/images/pic01.jpg"/>
 		<meta property="og:image:width" content="1500"/>
 		<meta property="og:image:height" content="410"/>
-		<meta itemprop="name" content="DAWdust"/>
-		<meta itemprop="url" content="https://www.dawdust.com"/>
+		<meta itemprop="name" content="Richard Hartnell || Circus Arts"/>
+		<meta itemprop="url" content="https://www.gravitydefiance.net"/>
 		<meta itemprop="thumbnailUrl" content="/images/pic01.jpg"/>
 		<link rel="image_src" href="/images/pic01.jpg" />
 		<meta itemprop="image" content="/images/pic01.jpg"/>
-		<meta name="twitter:title" content="DAWdust"/>
+		<meta name="twitter:title" content="Richard Hartnell || Circus Arts"/>
 		<meta name="twitter:image" content="/images/pic01.jpg"/>
-		<meta name="twitter:url" content="https://www.dawdust.com"/>
+		<meta name="twitter:url" content="https://www.gravitydefiance.net"/>
 		<meta name="twitter:card" content="summary"/>
-		<meta name="description" content="An uncannily genre-fluid DJ"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+		<meta name="description" content="The west coast's favorite sphere charmer"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
+<script>
+document.querySelectorAll('.video-container').forEach(container => {
+	container.querySelector('.play-button').addEventListener('click', () => {
+		const videoId = container.dataset.youtubeId;
+		const iframe = document.createElement('iframe');
+		iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
+		iframe.setAttribute('frameborder', '0');
+		iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+		iframe.setAttribute('allowfullscreen', '');
+		
+		container.innerHTML = '';
+		container.appendChild(iframe);
+	});
+	});
+</script>
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -88,8 +104,8 @@
 							<article id="about" style="text-align: center">
 								<h2 class="major">Video</h2>
 								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
-								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/1_06yv1nWAk?si=G5TYgaptK0HkfzUx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/BV4GLsZ-m6w?si=5YChV9cAvi4CgwSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/1_06yv1nWAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/BV4GLsZ-m6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 							</article>
 
 						<!-- Contact -->
