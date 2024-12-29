@@ -34,7 +34,7 @@
 	</head>
 	<body class="is-preload">
 
-<script>
+<!-- <script>
 document.querySelectorAll('.video-container').forEach(container => {
 	container.querySelector('.play-button').addEventListener('click', () => {
 		const videoId = container.dataset.youtubeId;
@@ -42,13 +42,12 @@ document.querySelectorAll('.video-container').forEach(container => {
 		iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
 		iframe.setAttribute('frameborder', '0');
 		iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-		iframe.setAttribute('allowfullscreen', '');
-		
+		iframe.setAttribute('allowfullscreen', '');		
 		container.innerHTML = '';
 		container.appendChild(iframe);
 	});
 	});
-</script>
+</script> -->
 		
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -79,39 +78,50 @@ document.querySelectorAll('.video-container').forEach(container => {
 					<div id="main"  style="text-align: center;">
 
 						<!-- Intro -->
-							<article id="intro">
+							<article id="intro" style="font-size: 0.75em">
 								<h2 class="major">Bio</h2>
 								<span class="image main"><img src="images/pic01.webp" alt="" loading="lazy"/></span>
 								<p>Richard Hartnell is among the most distinguished North American contact jugglers.</p>
-								<p>From the fundamentals to the far reaches, Richard's grasp of contact juggling technique has earned him places as a coveted instructor and performer across the United States and another twelve countries beyond. He is a co-founder of the Bellingham Circus Guild in Washington State and a resident artist emeritus at some of the Bay Area's premier studios of prop-based circus arts.</p>
+								<p>Richard's grasp of contact juggling technique has earned him places as a coveted instructor and performer across the United States and another twelve countries beyond. He is a co-founder of the Bellingham Circus Guild in Washington State and a resident artist emeritus at some of the Bay Area's premier studios of prop-based circus arts.</p>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
+							<article id="work" style="font-size: 0.75em">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" loading="lazy" /></span>
-								<h3>STAGE</h3>
+								<span class="image main"><img src="images/pic02.webp" alt="" loading="lazy" /></span>
 								<p>From intimate indie stages to tremendous festival fields, Richard has years of experience leaving audiences walking away buzzing about the act. Three stage acts run the gamut from high-energy circus feats to transcendent storytelling acts.</p>
-								<h3>CLOSE-UP</h3>
 								<p>Honed to perfection by hardened street audiences yet smoothly urbane in the parlor, Richard is top-notch at charming close-up audiences and adding flavor and visual ambiance to all kinds of events.</p>
-								<h3>FIRE</h3>
-								<p>Well-known among fire spinners, Richard is one of a perhaps single-digit number of jugglers known to capably perform the “contact fireball” act. A previous resident artist at one of the world's most famous fire spinning collectives, he's within arm's reach of as many fire spinners as you need, guaranteed.</p>
-								<p>
-
 							</article>
 
 						<!-- About -->
 							<article id="about" style="text-align: center">
 								<h2 class="major">Video</h2>
 								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
-								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/1_06yv1nWAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-								<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/BV4GLsZ-m6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+								<iframe
+								style="max-height: 25vh"
+								width="540"
+								height="315"
+								src="https://www.youtube.com/embed/1_06yv1nWAk"
+								frameborder="0"
+								allow="encrypted-media; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+							<iframe
+							style="max-height: 25vh"
+								width="540"
+								height="315"
+								src="https://www.youtube.com/embed/BV4GLsZ-m6w"
+								frameborder="0"
+								allow="encrypted-media; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+							  								<!-- <iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/BV4GLsZ-m6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen loading="lazy"></iframe> -->
 							</article>
 
 						<!-- Contact -->
-							<article id="contact">
+							<article id="contact" style="font-size: 0.75em">
 								<h2 class="major">Booking</h2>
-								<span class="image main"><img src="images/pic03.webp" alt="" loading="lazy " /></span>
+								<span class="image main"><img src="images/pic03.webp" alt="" loading="lazy" /></span>
 								<p>Richard Hartnell is available for performances, workshops, and private lessons.</p>
 								<p>You can download an electronic press kit here: <a href="https://www.gravitydefiance.net/Richard-Hartnell-Juggler-EPK.zip">EPK (.zip)</a></p>
 								<p>For booking inquiries, please email <a href="mailto:richard@gravitydefiance.net">richard@gravitydefiance.net</a>.
